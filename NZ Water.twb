@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Page   14 Table  3+ (3.10 NZ WATER)' inline='true' name='federated.1jr43kk0yn9x4u14cf7p01jv95of' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='3.10 NZ WATER' name='pdf.0i8tced1v34uld15hzh1l04qvs10'>
+            <connection class='pdf' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='256' origfilename='C:/Users/Shivam Patel/Desktop/Tableau Drive/3.10 NZ WATER.pdf' password='' pgFrom='14' pgTo='14' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='project'>
+          <columns>
+            <column caption='Inflow s' hidden='true' name='[Page   14 Table  3+].[Inflow s]' />
+            <column caption='F1' hidden='true' name='[Page   14 Table  3+].[F1]' />
+            <column name='[Project].[Inflow s, To sea and net abstraction, F1]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Page   14 Table  3+].[Inflow s]) THEN [Page   14 Table  3+].[Inflow s]&#10;ELSEIF NOT ISNULL([Page   14 Table  3+].[F1]) THEN [Page   14 Table  3+].[F1]&#10;ELSE NULL&#10;END' name='[Project].[Inflow s, To sea and net abstraction, F1]' />
+          </bindings>
+          <relation all='true' name='Page   14 Table  3+' type='union'>
+            <columns>
+              <column datatype='string' name='Inflow s' />
+              <column datatype='string' name='F2' />
+              <column datatype='string' name='F3' />
+              <column datatype='string' name='F4' />
+              <column datatype='string' name='F5' />
+              <column datatype='string' name='F6' />
+              <column datatype='string' name='F7' />
+              <column datatype='string' name='F8' />
+              <column datatype='string' name='F9' />
+              <column datatype='string' name='F10' />
+              <column datatype='string' name='F11' />
+              <column datatype='string' name='F12' />
+              <column datatype='string' name='F13' />
+              <column datatype='string' name='F14' />
+              <column datatype='string' name='F15' />
+              <column datatype='string' name='F16' />
+              <column datatype='string' name='F17' />
+              <column datatype='string' name='F1' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='pdf.0i8tced1v34uld15hzh1l04qvs10' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q10:no:A1:Q10:0' header='yes' lost='0' outcome='2' processed='80'>
+                <column datatype='string' name='Inflow s' ordinal='0' />
+                <column datatype='string' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+                <column datatype='string' name='F12' ordinal='11' />
+                <column datatype='string' name='F13' ordinal='12' />
+                <column datatype='string' name='F14' ordinal='13' />
+                <column datatype='string' name='F15' ordinal='14' />
+                <column datatype='string' name='F16' ordinal='15' />
+                <column datatype='string' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+            <relation connection='pdf.0i8tced1v34uld15hzh1l04qvs10' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+              <columns gridOrigin='A1:Q9:no:A1:Q9:0' header='no' outcome='2'>
+                <column datatype='string' name='F1' ordinal='0' />
+                <column datatype='string' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+                <column datatype='string' name='F12' ordinal='11' />
+                <column datatype='string' name='F13' ordinal='12' />
+                <column datatype='string' name='F14' ordinal='13' />
+                <column datatype='string' name='F15' ordinal='14' />
+                <column datatype='string' name='F16' ordinal='15' />
+                <column datatype='string' name='F17' ordinal='16' />
+              </columns>
+            </relation>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflow s, To sea and net abstraction, F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Inflow s, To sea and net abstraction, F1]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Inflow s, To sea and net abstraction, F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F15</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F15]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F15</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F16</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F16]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F16</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Page   14 Table  3+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1995' datatype='string' name='[1995 1996 1997 - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1jr43kk0yn9x4u14cf7p01jv95of].[1995 1996 1997]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [1995 1996 1997], &quot; &quot;, 1 ) )' />
+      </column>
+      <column caption='1996' datatype='string' name='[1995 1996 1997 - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1jr43kk0yn9x4u14cf7p01jv95of].[1995 1996 1997]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [1995 1996 1997], &quot; &quot;, 2 ) )' />
+      </column>
+      <column caption='1997' datatype='string' name='[1995 1996 1997 - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1jr43kk0yn9x4u14cf7p01jv95of].[1995 1996 1997]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [1995 1996 1997], &quot; &quot;, 3 ) )' />
+      </column>
+      <column datatype='string' name='[F10]' role='dimension' type='nominal' />
+      <column caption='Water Sources' datatype='string' name='[Inflow s, To sea and net abstraction, F1]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.912863' measure-ordering='alphabetic' measure-percentage='0.0871369' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[F10]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[F10]' />
+          <groupfilter function='member' level='[F10]' member='%null%' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Inflow s, To sea and net abstraction, F1]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[Inflow s, To sea and net abstraction, F1]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[Inflow s, To sea and net abstraction, F1]' member='&quot;Total change in storage&quot;' />
+            <groupfilter function='member' level='[Inflow s, To sea and net abstraction, F1]' member='&quot;Total inflow s&quot;' />
+            <groupfilter function='member' level='[Inflow s, To sea and net abstraction, F1]' member='&quot;Total outflow s&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F08AD191-6A88-4437-911A-0AECDD985793}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
